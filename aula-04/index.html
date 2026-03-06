@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2> Texto Marcado</h2>
+    <h2> Negrito</h2>
+    <p> Aqui teremos o texto<b> com a tag b </b></p>
+    <p>Aqui teremos o texto<strong> com a tag strong</strong></p>
+    <br>
+    <h2> Italico</h2>
+    <p> Aqui teremos o texto <i>com a tag i</i></p>
+    <p> Aqui teremos o texto <em> com a tag em</em></p>
+    <br>
+    <h2> Texto Marcado</h2>
+    <p> Aqui teremos o texto <mark> com a tag mark</mark></p>
+    <br>
+    <h2> Texto grande ou pequeno</h2>
+    <p> Aqui teremos o texto <big> com a tag big</big>,<small> e com tag small</small></p>
+    <br>
+    <h2>Texto deletado</h2>
+    <p> Aqui teremos o texto <s> com a tag s </s></p>
+    <p> Aqui teremos o texto <del> com a tag del</del></p>
+    <br>
+    <h2> Texto inserido</h2>
+    <p> Aqui termos o textos<u> com a tag u</u></p>
+    <p> Aqui teremos um texto <ins> com a tag ins</ins></p>
+    <br>
+    <h2> Texto sobrescrito</h2>
+    <p> Aqui usaremos a tag sup para demonstrar uma equação: B<sup>2</sup>+2=22</p>
+    <br>
+    <h2>Texto subscrito </h2>
+    <p> Aqui usaremos a tag sub para demonstrar a formula da agua: H<sub>2</sub>O </p>
+    <br>
+    <h2> Trecho de codigo fonte</h2>
+    <p> Aqui usaremos as tags pre e code para importa outro codigo de python</p>
+    <pre>
+        <code> import random
+
+def gerar_equacao_segundo_grau():
+    # O coeficiente 'a' não pode ser 0 em uma equação do 2º grau
+    a = random.randint(-10, 10)
+    while a == 0:
+        a = random.randint(-10, 10)
+        
+    b = random.randint(-20, 20)
+    c = random.randint(-20, 20)
+
+    # Função auxiliar para formatar a exibição dos termos
+    def formatar_termo(valor, termo, primeiro=False):
+        if valor == 0: return ""
+        sinal = "+" if valor > 0 and not primeiro else ""
+        
+        # Ajusta exibição de coeficientes 1 e -1 (ex: x² em vez de 1x²)
+        if valor == 1 and termo != "": valor_str = ""
+        elif valor == -1 and termo != "": valor_str = "-"
+        else: valor_str = str(valor)
+        
+        return f"{sinal}{valor_str}{termo}"
+
+    # Montagem da string da equação ax² + bx + c = 0
+    equacao = (formatar_termo(a, "x²", True) + 
+               formatar_termo(b, "x") + 
+               formatar_termo(c, ""))
+    
+    return f"{equacao} = 0"
+
+# Exemplo de uso
+nova_equacao = gerar_equacao_segundo_grau()
+print(f"Equação gerada: {nova_equacao}")
+</code>
+    </pre>
+<br> 
+<h2> Citações simples</h2>
+<p> Aqui teremos uma citação com a tag q: <q>A tecnologia mive o mundo</q>- steve jobs</p>
+<br> 
+<h2> Citações completas</h2>
+<p> Aqui citaremos um livro usanfo a tag blockquote</p>
+
+<blockquote cite="https://editorarealize.com.br/artigo/visualizar/45294" >
+   <p> Seria Percy Jackson uma epopeia moderna? Para tanto este trabalho busca comparar a estrutura dos dois gêneros, a epopeia e o romance de Rick Riordan</p>
+    
+</blockquote>
+<br> 
+<h2> Abrevições</h2>
+<p> Aqui teremos <acronym> a tag abbr para abreviar </acronym> </p>
+<br>
+<h2> Texto invertido</h2>
+<p> Esse texto vai inverter com a tag <bdo dir="Esse texto vai inverter com a tag"></bdo></p>
+
+</body>
+</html>
