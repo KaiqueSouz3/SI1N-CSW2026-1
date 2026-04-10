@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fotmulario</title>
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+   <h1> Formulario de Identificação</h1>
+   <table style="margin: 0 auto;">
+    <tr>
+        <td> 
+            <button style="font-size: 18px;" class="btn-glow"><a href="homes.html">Pular Etapa &rarr;</a></button>
+        </td>
+    </tr>
+   </table>
+   
+   <br>
+   <form action="" method="get">
+    <table border="3" width="40%" cellpadding="15" style="margin: 0 auto;">
+        <tbody>
+            <tr>
+                <th>Nome:</th>
+                <td>
+                <label for="Nome"></label>
+                <input type="text" name="Nome" id="mome" size="40" maxlength="30" value="" placeholder=" Digite seu Nome">
+                </td>
+            </tr>
+            <tr>
+                <th> Email:</th>
+                <td>
+                <label for="Email"></label>
+                <input type="email" name="Email" id="email" size="40" maxlength="30" value="">
+                </td>
+            </tr>
+            <tr>
+                <th>Telefone:</th>
+                <td>
+                <label for="Telefone"></label>
+                <input type="tel" name="Email" id="telefone" size="40" maxlength="30" value="" placeholder=" (00) 00000-0000">
+                </td>
+            </tr>
+            <tr rowspa="2">
+                <td> 
+                <input type="radio" id="opcao" name="opcao" value=""> Pessoa Fisica <br>
+                <input type="radio" id="opcao" name="opcao" value=""> Pessoa Juridica <br>
+                </td>
+                <td>
+                <label for=""> Horario de Contato:</label>
+                <input type="time" name="time" id="time">
+                </td>
+            </tr>
+            <tr>
+                <th>Tipo de serviço:</th>
+                <td> 
+                <label for=""></label>
+                <select name="serviço" size="1">
+                <option value="">selecionar</option>
+                <option value="criar_web">criar web</option>
+                <option value="analise_web">analise web</option>
+                </select>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                <textarea name="descricao" cols="55" rows="10" placeholder="Descreva o serviço desejado"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2"> 
+                    <input type="submit" value="enviar">
+                    <input type="reset" value="limpar">
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    </form>
+    <br>
+    <table style="margin: 0 auto;">
+        <tr>
+            <td>
+                <button style="font-size: 18px;" class="btn-glow">
+                  <a href="homes.html"> Prosseguir &rarr;</a>
+                </button>
+            </td>
+        </tr>
+    </table>
+   
+</body>
+</html>
