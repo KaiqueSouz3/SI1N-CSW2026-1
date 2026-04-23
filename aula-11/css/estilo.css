@@ -4,14 +4,16 @@ body{
 .caixa {
   display: flex;
   justify-content: center;
-  align-items: center;  
-  border-radius: 50px;
+  align-items: center;
+  height: 100vh;
 }
 
 .texto {
-  padding: 20px;
+  padding: 40px;
   background-color:white;
   width: 500px;
+  border-radius: 80px;
+  box-shadow: 5px 5px 50px black;
 }
 h1{
     color: #1BA1E2;
@@ -22,5 +24,3 @@ h2{
 h3{
     color: #00ABA9;
 }
-
-
