@@ -1,0 +1,12 @@
+ 
+   .minha-div{
+    background-color: white;
+    color: white;
+    cursor: pointer;
+    transition:background-color 1.5;
+    width: 250px;
+   }
+   .minha-div:hover{
+      background-color: pink;
+   }
+  
