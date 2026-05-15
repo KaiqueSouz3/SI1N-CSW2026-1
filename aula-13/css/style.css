@@ -1,0 +1,37 @@
+.container{
+    display: flex;
+    background-color: darkred;
+    gap: 16px;
+    align-content: center;
+    flex-wrap: wrap;
+    padding: 10px;
+    border-radius: 25px;
+    justify-content: space-between;
+}
+.i1{
+    width: 50px;
+    height: 50px;
+    flex: 2 0 150px;
+    background-color: black;
+    border-radius: 25px;
+    color: white;
+    text-align: center;
+}
+.i2{
+    width: 50px;
+    height: 50px;
+    flex: 3 0 75px;
+    background-color: black;
+    border-radius: 25px;
+    color: white;
+    text-align: center;
+}
+.i3{
+    width: 50px;
+    height: 50px;
+    flex: 1 0 300px;
+    background-color: black;
+    border-radius: 25px;
+    color: white;
+    text-align: center;
+}
