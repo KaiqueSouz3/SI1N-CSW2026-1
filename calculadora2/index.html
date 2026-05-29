@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Idade</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="main-container">
+        <div class="image-container">
+            <img src="https://picsum.photos/800/400" alt="Imagem de Fundo">
+            <div class="overlay-text">Calculadora de Idade</div>
+        </div>
+
+        <div class="form-container">
+            <label class="section-title">Selecione sua data de nascimento:</label>
+            
+            <div class="selects-group">
+                <div class="select-field">
+                    <label for="dia">Dia</label>
+                    <select id="dia">
+                        </select>
+                </div>
+
+                <div class="select-field">
+                    <label for="mes">Mês</label>
+                    <select id="mes">
+                        </select>
+                </div>
+
+                <div class="select-field">
+                    <label for="ano">Ano</label>
+                    <select id="ano">
+                        </select>
+                </div>
+            </div>
+
+            <button id="btn-calcular">Calcular Idade</button>
+        </div>
+
+        <div id="resultado" class="result-container">
+            Preencha os dados acima para calcular.
+        </div>
+    </div>
+
+    <script src="script.js" defer></script>
+</body>
+</html>
