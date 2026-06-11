@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="calc-padrao">
+  <div class="display" id="display-padrao">0</div>
+  <div class="botoes">
+    <button class="btn num">7</button>
+    <button class="btn num">8</button>
+    <button class="btn num">9</button>
+    <button class="btn op">+</button>
+    <button class="btn num">4</button>
+    <button class="btn num">5</button>
+    <button class="btn num">6</button>
+    <button class="btn op">-</button>
+    <button class="btn num">1</button>
+    <button class="btn num">2</button>
+    <button class="btn num">3</button>
+    <button class="btn clear" id="btn-limpar">C</button>
+    <button class="btn num zero">0</button>
+    <button class="btn igual" id="btn-igual">=</button>
+  </div>
+</div>
+
+<style>
+  .calc-padrao { width: 250px; background: #333; padding: 15px; border-radius: 8px; font-family: sans-serif; }
+  .display { background: #fff; padding: 15px; text-align: right; font-size: 24px; margin-bottom: 15px; border-radius: 4px; }
+  .botoes { display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; }
+  .btn { padding: 15px; font-size: 18px; border: none; border-radius: 4px; cursor: pointer; background: #eee; }
+  .btn.op { background: #ff9800; color: white; }
+  .btn.clear { background: #f44336; color: white; grid-column: span 2; }
+  .btn.zero { grid-column: span 2; }
+  .btn.igual { background: #4caf50; color: white; grid-column: span 4; }
+  .btn:hover { opacity: 0.8; }
+</style>
+
+Desafio 1: Faça com que, ao clicar em qualquer botão da classe .num, o número apareça na div de #display-padrao. Lembre-se de concatenar (juntar) os números, para que clicar no "7" e depois no "8" forme "78".
+
+Desafio 2: Dê vida ao botão "C" (#btn-limpar). Ao ser clicado, o display deve voltar a mostrar "0".
+
+Desafio 3: Crie variáveis para armazenar o primeiro número digitado e o operador. Quando o botão "=" for clicado, execute a soma ou subtração matemática real (cuidado para o JS não somar textos como "7"+"8" = "78" na hora do cálculo, use parseInt() ou Number()).
+</body>
+</html>
