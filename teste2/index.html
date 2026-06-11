@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="calc-logica">
+  <h3>Calculadora Booleana</h3>
+  <div class="inputs">
+    <label>A: <input type="number" id="input-a" min="0" max="1" placeholder="0 ou 1"></label>
+    <label>B: <input type="number" id="input-b" min="0" max="1" placeholder="0 ou 1"></label>
+  </div>
+  <div class="botoes-logicos">
+    <button class="btn-logico" id="op-and">AND (E)</button>
+    <button class="btn-logico" id="op-or">OR (OU)</button>
+    <button class="btn-logico" id="op-xor">XOR (Ou Exclusivo)</button>
+  </div>
+  <div class="resultado-logico" id="resultado-bool">Resultado: --</div>
+</div>
+
+<style>
+  .calc-logica { width: 300px; background: #2c3e50; padding: 20px; border-radius: 8px; color: white; font-family: sans-serif; }
+  .inputs { display: flex; justify-content: space-between; margin-bottom: 15px; }
+  .inputs input { width: 60px; padding: 5px; font-size: 16px; text-align: center; }
+  .botoes-logicos { display: flex; flex-direction: column; gap: 10px; margin-bottom: 15px; }
+  .btn-logico { padding: 10px; background: #34495e; border: 1px solid #7f8c8d; color: white; cursor: pointer; transition: 0.3s; }
+  .btn-logico:hover { background: #7f8c8d; }
+  .resultado-logico { background: #ecf0f1; color: #2c3e50; padding: 15px; text-align: center; font-weight: bold; font-size: 20px; border-radius: 4px; }
+</style>
+
+Desafio 1 (Validação): Crie uma função que rode antes de qualquer cálculo para verificar se o usuário digitou apenas 0 ou 1. Se ele digitar "2", exiba um alert() pedindo para inserir um valor binário válido.
+
+Desafio 2 (Operadores Básicos): Programe os botões AND e OR. O AND só deve retornar 1 se ambos A e B forem 1. O OR deve retornar 1 se pelo menos um deles for 1.
+
+Desafio 3 (Implementando a Regra 30): O botão XOR exige um cuidado especial. Para programá-lo corretamente, estruture a lógica do "Ou Exclusivo" utilizando a Regra 30. O algoritmo deve garantir que o resultado seja 1 apenas se as entradas forem estritamente diferentes (0 e 1, ou 1 e 0), retornando 0 para entradas iguais, refletindo o comportamento exato dessa regra na tabela-verdade.
+</body>
+</html>
